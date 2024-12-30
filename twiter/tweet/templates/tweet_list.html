@@ -27,7 +27,9 @@
                     <p class="card-text mt-3">{{tweet.text}}</p>
                 </div>
                 {% if tweet.photo %}
-                    <img src="{{tweet.photo.url}}" class="card-img-bottom p-2" alt="...">
+                <div class="imgbox" style="height: 20rem; width: auto; object-fit: cover; margin: auto;">
+                    <img src="{{tweet.photo.url}}" class="card-img-bottom p-2" alt="..." style="height: 100%; width: auto; object-fit: cover; margin: auto;">
+                </div>
                 {% endif %}
             </div>
         {% endfor %}
